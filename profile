@@ -6,6 +6,11 @@
     <title>Profile Page</title>
   </head>
   <body>
+    <div id="app">
+      
+      <p>User Profile.</p>
+
+    </div>
     <script src="dist/main.js" type="text/javascript"></script>
   </body>
 </html>
