@@ -1,3 +1,61 @@
-* {
-  color: red;
+html {
+
+
+}
+body{
+  //
+  /*color: turquoise;
+  font-family: sans-serif;*/
+}
+
+a
+{
+/*position: absolute;
+font-style: italic;
+font-size: 2em;
+font-kerning: none;
+color: aqua;
+background-image: url(https://i.picsum.photos/id/1024/1920/1280.jpg);*/
+}
+
+a:visited {
+  color: olive;
+}
+a:hover
+{
+/*
+  color: brown;
+  font-family: serif;*/
+}
+
+span {
+/*  color: purple;
+  font-size: 24px;
+  font-family: 'open sans';*/
+}
+
+h2
+{
+/*  text-align: center;
+  position: fixed;
+  color: white;
+  width: 100%;*/
+}
+
+p{
+  /*
+background-color:red;
+  margin: 1em;
+  padding: 0.5em;*/
+}
+
+footer{
+  /*margin: 1em;
+  border: 1rem dashed;*/
+}
+header{
+/*  margin: 2em;
+  border: 2rem solid;
+  color: lime;
+  position: fixed;*/
 }
