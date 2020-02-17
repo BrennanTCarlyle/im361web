@@ -1,61 +1,160 @@
-html {
-
-
-}
-body{
-  
-  /*color: turquoise;
-  font-family: sans-serif;*/
+article
+{
+    padding-top: 30px;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+  text-align: center;
+}
+
+li {
+  float: left;
+  color: black;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+li a2
+{
+  color:grey;
+  padding: 5px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+a3
+{
+  text-align: center;
+  padding: 15px;
+  font-family: sans-serif;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+.right
+{
+  position: absolute;
+  top: 8px;
+    right: 0px;
+    width: 100px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.rt
+{
+
+  position: absolute;
+    top: 8px;
+    right: -150px;
+    width: 300px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+
+}
 a
 {
-/*position: absolute;
-font-style: italic;
-font-size: 2em;
-font-kerning: none;
-color: aqua;
-background-image: url(https://i.picsum.photos/id/1024/1920/1280.jpg);*/
-}
 
+
+
+
+}
 a:visited {
-  color: olive;
+  color: grey;
 }
 a:hover
 {
+  color: orange;
 /*
   color: brown;
   font-family: serif;*/
 }
 
 span {
-/*  color: purple;
+  /*
+  color: purple;
   font-size: 24px;
   font-family: 'open sans';*/
 }
 
-h2
+h1
 {
-/*  text-align: center;
-  position: fixed;
-  color: white;
-  width: 100%;*/
+padding-bottom: 25px;
+text-align: center;
+font-family: sans-serif;
+
 }
 
-p{
-  /*
-background-color:red;
-  margin: 1em;
-  padding: 0.5em;*/
+h2
+{
+font-family: sans-serif;
+  text-align: center;
+}
+
+h3
+{
+text-align: center;
+display: inline;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child {
+  display: inline-block;
+  padding: 16px;
+  font-family: sans-serif;
+  color: orange;
+
+}
+
+p
+{
+text-align: center;
+padding: 15px;
+font-family: sans-serif;
 }
 
 footer{
-  /*margin: 1em;
-  border: 1rem dashed;*/
+
+text-align: center;
 }
 header{
-/*  margin: 2em;
+  /*
+  margin: 2em;
   border: 2rem solid;
   color: lime;
-  position: fixed;*/
+  position: fixed;
+  */
+
 }
