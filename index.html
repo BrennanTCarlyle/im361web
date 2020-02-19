@@ -27,6 +27,7 @@
 </ul>
       </nav>
       <div class="right">
+
       <button>Search</button>
     </div>
     <div class="rt">
@@ -35,8 +36,7 @@
     </header>
     <main>
       <article>
-        <h2><span>Featured</span></h2>
-
+        <h2><span class = "Featured" href="#">Featured</span></h2>
           <p>Best cosplays featured this month, and how they were created.</p>
           <p href="#">Explore</p>
 
@@ -53,11 +53,19 @@
   </div>
       </article>
       <article>
-        <h2><span>Movies</span></h2>
+        <h2><span class = "Featured" href="#">Movies</span></h2>
             <img src="movies.gif">
         <p>Your go-to for any movie cosplay!</p>
 
-        <p href="#">Explore</p>
+
+<div style="text-align:center;">
+        <div id="popup">
+          <button @click="show = !show">Close</button>
+          <transition name="bounce">
+            <p v-if="show">Pardon our dust! This site is still under construction!</p>
+          </transition>
+        </div>
+</div>
 
       </article>
       <article>
