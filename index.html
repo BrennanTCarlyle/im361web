@@ -7,7 +7,7 @@
   </head>
   <body>
     <div id="app">
-      <!--<button onclick="window.location.href = 'file:///C:/Users/Brennan/Documents/IM361/IM361REPO/im361web/profile.html';">Click Here</button>-->
+      <button onclick="window.location.href = 'file:///C:/Users/Brennan/Documents/IM361/IM361REPO/im361web/profile.html';">Click Here</button>
       <div class="right">
        <!--<p>Added {{ counter }} items to cart.</p>-->
       <!--<p> {{ userName }}</p>-->
@@ -41,26 +41,41 @@
           <p href="#">Explore</p>
 
 
-  <div class="row">
-    <div class="zoom">
-    <li><img src="./images/shaxxCosplay.jpg" style="width:200px" style="height:200px">
-    </div>
-    <div class="zoom">
-    <img src="./images/ornstein.jpg" style="width:200px" style="height:200px">
-    </div>
-    <div class="zoom">
-    <img src="./images/warhammer.jpg" style="width:200px" style="height:200px">
-    </div>
-    <div class="zoom">
-    <img src="./images/dredd.jpg" style="width:200px" style="height:200px">
-    </div>
-    <div class="zoom">
-    <img src="./images/batman.jpg" style="width:200px" style="height:200px">
-    </div>
-    <div class="zoom">
-    <img src="./images/anime.jpg" style="width:200px" style="height:200px">
 
-  </div>
+  <div class="row">
+      <!--<div class="zoom">-->
+      <!-- The Modal -->
+
+    <img id="myImg" src="./images/shaxxCosplay.jpg" alt="Shaxx">
+
+    <div id="myModal" class="modal">
+      <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div>
+
+      <!--</div>-->
+    <!--<div class="zoom">-->
+    <img id="myImg" src="./images/ornstein.jpg" alt="Ornstein">
+
+    <!--<div class="zoom">-->
+    <img id="myImg" src="./images/warhammer.jpg" alt="Warhammer">
+
+    <!--<div class="zoom">-->
+    <img id="myImg" src="./images/dredd.jpg" alt="Dredd">
+
+    <!--<div class="zoom">-->
+    <img id="myImg" src="./images/batman.jpg" alt="Batman">
+
+    <!--<div class="zoom">-->
+    <img id="myImg" src="./images/anime.jpg" alt="Anime">
+
+  <!--</div>-->
       </article>
       <article>
         <h2><span class = "Featured" href="#">Movies</span></h2>

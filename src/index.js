@@ -1,6 +1,25 @@
 import Vue from 'vue/dist/vue.js'
 import "./style.css";
+// Get the modal
+var modal = document.getElementById("myModal");
 
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
 var app = new Vue({
   el: '#app',
   data: {
@@ -26,26 +45,11 @@ var app = new Vue({
           show: true
         },
 
-      computed: {
-        pluralMedium: function() {
-          if (this.mediumName == "Video Games") {
-            return "Cosplays for all of your favorite games!";
-          } else if (this.mediumName == "Featured") {
-            return this.mediumName;
-          } else {
-            return this.mediumName;
-          }
-        },
-        cannotPlaceOrder: function() {
-          return this.orderAmount < 1;
-        },
-        isDangerous: function() {
-          return this.orderAmount >= 10;
-        },
-        orderAmount: function() {
-          return this.mediumTypes.length;
+ methods: {
+    NewWindow: function() {
+            window.open("file:///C:/Users/Brennan/Documents/IM361/IM361REPO/im361web/Featured_shaxx.html");
         }
-      }
+}
 
     });
 
