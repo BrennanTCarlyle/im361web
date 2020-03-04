@@ -3,12 +3,16 @@ article
     padding-top: 30px;
 }
 
+html{
+  background-color: #333333;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
+  background-color: orange;
   text-align: center;
 }
 
@@ -46,6 +50,10 @@ a3
   text-align: center;
   padding: 15px;
   font-family: sans-serif;
+}
+
+a{
+  color: white;
 }
 
 .center{
@@ -110,11 +118,11 @@ background-position: center;
 }*/
 
 a:visited {
-  color: grey;
+  color: white;
 }
 a:hover
 {
-  color: orange;
+  color: grey;
 /*
   color: brown;
   font-family: serif;*/
@@ -139,6 +147,7 @@ h2
 {
 font-family: sans-serif;
   text-align: center;
+  color: white;
 }
 
 h3
@@ -168,6 +177,7 @@ p
 text-align: center;
 padding: 15px;
 font-family: sans-serif;
+color: white;
 }
 
 footer{
