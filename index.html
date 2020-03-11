@@ -7,9 +7,16 @@
   </head>
   <body>
     <div id="app">
-      <button onclick="window.location.href = 'file:///C:/Users/Brennan/Documents/IM361/IM361REPO/im361web/profile.html';">Click Here</button>
 
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal" v-bind:hidden="!isModalShown">
+        <span class="close-cursor" v-on:click="hideModal()">Close</span>
+        <div class="modal-content">
+      <img class="modalIMG" v-bind:src="modalImage">
+      </img>
 
+        </div>
+      </div>
 
     <header>
       <h1><a href="#">Cosplay Companion</a></h1>
@@ -28,36 +35,32 @@
 
       <button>Search</button>
     </div>
+
     <div class="rt">
       <a href="#">Cart</a>
     </div>
     </header>
     <main>
+      <!-- Images used to open the lightbox -->
+      <div class="row">
+        <div class="column" v-for="image in modalImages">
+          <!--<div class="imgpreview">-->
+          <a v-on:click="openModal(image)">
+          <img v-bind:src="image" class="hover-shadow thumbnail">
+        </a>
+        </div>
+
+        </div>
       <article>
+
         <h2><span class = "Featured" href="#">Featured</span></h2>
           <p>Best cosplays featured this month, and how they were created.</p>
           <p href="#">Explore</p>
 
-          <!-- Images used to open the lightbox -->
-          <div class="row">
-            <div class="column" v-for="image in modalImages">
-              <!--<div class="imgpreview">-->
-              <a v-on:click="openModal(image)">
-              <img v-bind:src="image" class="hover-shadow">
-            </a>
-            </div>
 
-            </div>
-          
 
-          <!-- The Modal/Lightbox -->
-          <div id="myModal" class="modal" v-bind:hidden="!isModalShown">
-            <span class="close cursor" onclick="closeModal()">&times;</span>
-            <div class="modal-content">
-<img class="modalIMG" v-bind:src="modalImage">
 
-            </div>
-          </div>
+
 
 
       </article>
