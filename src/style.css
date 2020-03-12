@@ -113,12 +113,13 @@ overflow: none;
 }
 
 .thumbnail{
-  background-image: modalImages;
+
   width:230px;
   height:230px;
   background-size: cover;
   background-position: center;
   float: center;
+  display:inline-flex;
 }
 
 /*
@@ -210,10 +211,13 @@ header{
 
 
 .column {
-  float: left;
   padding: 5px;
+  display:inline-flex;
 }
 
+.row{
+  text-align: center;
+}
 /* Clearfix (clear floats) */
 .row::after {
   content: "";

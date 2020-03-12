@@ -46,7 +46,8 @@
         <div class="column" v-for="image in modalImages">
           <!--<div class="imgpreview">-->
           <a v-on:click="openModal(image)">
-          <img v-bind:src="image" class="hover-shadow thumbnail">
+          <!--<img v-bind:src="image" class="hover-shadow thumbnail">-->
+          <div v-bind:style="{backgroundImage:'url('+image+')'}" class="hover-shadow thumbnail"></div>
         </a>
         </div>
 
