@@ -29,7 +29,7 @@ li {
     color: white;
     text-align: center;
     padding: 16px;
-  
+
 }
 
 .imgpreview
@@ -107,16 +107,18 @@ nav
 
 img
 {
-
-padding: 15px;
-align-items: center;
-margin-left: 30px;
-vertical-align: center;
+display: flex;
+flex-wrap: nowrap;
+overflow: none;
 }
 
 .thumbnail{
-  max-width: 200px;
-  max-height: 200px;
+  background-image: modalImages;
+  width:230px;
+  height:230px;
+  background-size: cover;
+  background-position: center;
+  float: center;
 }
 
 /*
@@ -207,6 +209,19 @@ header{
 }
 
 
+.column {
+  float: left;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
 .modal {
   background-color: rgba(0, 0, 0, 0.75);
   position: fixed;
@@ -217,11 +232,11 @@ header{
 }
 
 .modal-content {
-  width: 40vw;
-  height: 40vw;
+  width: 30vw;
+  height: 30vw;
   left: 50%;
   top: 50%;
-  position: absolute;
+  position: inherit;
   transform: translate(-50%, -50%);
   text-align: center;
   white-space: nowrap;
