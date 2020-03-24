@@ -6,7 +6,7 @@ var app = new Vue({
   data: {
     message: 'Hello Vue!',
     counter: 0,
-    currentPage: "Home",
+    currentPage: "Featured",
     userName: "BTCarlyle",
     mediumName: null,
     orderAmount: [],
