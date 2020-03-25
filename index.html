@@ -21,17 +21,17 @@
     <header>
       <h1><img src="./images/CosplayCompanionLogoAlt.png" width=25% height=25%/>
 
-
+<nav v-bind:class="active" v-on:click.prevent>
         <ul style="list-style-type:none">
-                 <li><a v-on:click="currentPage = 'Featured'">Featured</a></li>
-                 <li><a v-on:click="currentPage = 'Movies'">Movies</a></li>
-                 <li><a v-on:click="currentPage = 'Video Games'">Video Games</a></li>
-                 <li><a v-on:click="currentPage = 'Historical'">Historical</a></li>
-                 <li><a v-on:click="currentPage = 'Comics'">Comics</a></li>
-                 <li><a v-on:click="currentPage = 'Other'">Other</a></li>
-                 <li><a v-on:click="currentPage = 'Props'">Props</a></li>
+                 <li><a href="#Featured" class="Featured" v-on:click="pageName = 'Featured'">Featured</a></li>
+                 <li><a href="#Movies" class="Movies" v-on:click="pageName = 'Movies'">Movies</a></li>
+                 <li><a href="#Video Games" class="Video Games" v-on:click="pageName = 'Video Games'">Video Games</a></li>
+                 <li><a href="#Historical" class="Historical" v-on:click="pageName = 'Historical'">Historical</a></li>
+                 <li><a href="#Comics" class="Comics" v-on:click="pageName = 'Comics'">Comics</a></li>
+                 <li><a href="#Other" class="Other" v-on:click="pageName = 'Other'">Other</a></li>
+                 <li><a href="#Other" class="Other" v-on:click="pageName = 'Props'">Props</a></li>
         </ul>
-
+</nav>
 
       </h1>
       <nav>
@@ -46,12 +46,12 @@
       <a href="#">Cart</a>
     </div>-->
     </header>
-     <main v-bind:hidden="currentPage != 'Featured'">
+     <main v-bind:hidden="pageName != 'Featured'" class = "Featured" href="#">
 
       <article>
 
 
-        <h2><span class = "Featured" href="#">Featured</span></h2>
+        <h2><span>Featured</span></h2>
           <p>Best cosplays featured this month, and how they were created.</p>
           <!--<p href="#">Explore</p>-->
 
@@ -70,9 +70,9 @@
       </article>
     </main>
 
-    <main v-bind:hidden="currentPage != 'Movies'">
+    <main v-bind:hidden="pageName != 'Movies'" class = "Movies" href="#">
     <article>
-        <h2><span class = "Movies" href="#">Movies</span></h2>
+        <h2><span>Movies</span></h2>
 
         <p>Your go-to for any movie cosplay!</p>
 
@@ -82,9 +82,9 @@
       </article>
     </main>
 
-    <main v-bind:hidden="currentPage != 'Video Games'">
+    <main v-bind:hidden="pageName != 'Video Games'" class = "Video Games" href="#">
       <article>
-        <h2><span class = "Video Games" href="#">Video Games</span></h2>
+        <h2><span>Video Games</span></h2>
 
         <p>Cosplays for all of your favorite games!</p>
 
@@ -93,7 +93,7 @@
       </article>
 </main>
 
-    <main v-bind:hidden="currentPage != 'Historical'">
+    <main v-bind:hidden="pageName != 'Historical'" class = "Historical" href="#">
       <article>
         <h2><span>Historical</span></h2>
 
@@ -104,7 +104,7 @@
       </article>
     </main>
 
-    <main v-bind:hidden="currentPage != 'Comics'">
+    <main v-bind:hidden="pageName != 'Comics'" class = "Comics" href="#">
       <article>
         <h2><span>Comics</span></h2>
 
@@ -115,7 +115,7 @@
       </article>
     </main>
 
-    <main v-bind:hidden="currentPage != 'Other'">
+    <main v-bind:hidden="pageName != 'Other'" class = "Other" href="#">
       <article>
         <h2><span>Other</span></h2>
 
@@ -126,7 +126,7 @@
       </article>
     </main>
 
-<main v-bind:hidden="currentPage != 'Props'">
+<main v-bind:hidden="pageName != 'Props'" class = "Props" href="#">
       <article>
         <h2><span>Props</span></h2>
 
