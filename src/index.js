@@ -29,6 +29,43 @@ var app = new Vue({
       "./images/warhammer.jpg",
       "./images/dredd.jpg",
     ],
+    MVmodalImages: [
+      "./images/batman.jpg",
+      "./images/boba.jpg",
+      "./images/witchKing.jpg",
+      "./images/dredd.jpg",
+    ],
+    VGmodalImages: [
+      "./images/warlock.png",
+      "./images/vaultDweller.png",
+      "./images/giantDadLautrec.png",
+      "./images/noble6.png",
+    ],
+    HISTmodalImages: [
+      "./images/ww2.jpg",
+      "./images/knight.jpg",
+      "./images/dress.jpg",
+      "./images/union.jpg",
+    ],
+    COMmodalImages: [
+      "./images/batman.jpg",
+      "./images/tony.jpg",
+      "./images/pool.png",
+      "./images/saitama.jpg",
+    ],
+    OTHERmodalImages: [
+      "./images/steampunk.jpg",
+      "./images/cyberpunk.jpg",
+      "./images/stilts.jpg",
+      "./images/anime.jpg",
+    ],
+    PROPSmodalImages: [
+      "./images/lastWord.jpg",
+      "./images/crest.jpg",
+      "./images/slayer.jpg",
+      "./images/portal.jpg",
+    ],
+
   },
   methods: {
     openModal: function(image) {

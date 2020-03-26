@@ -241,11 +241,10 @@ header{
   left: 0;
   width: 100vw;
   height: 100%;
+  z-index: 10;
 }
 
 .modal-content {
-  width: 30vw;
-  height: 30vw;
   left: 50%;
   top: 50%;
   position: inherit;
@@ -254,7 +253,12 @@ header{
   white-space: nowrap;
 }
 .modalIMG{
-  width: 100%;
+width:50%;
+height:50%;
+  background-size: cover;
+  background-position: center;
+  float: center;
+  display:inline-flex;
 }
 
 /* https://stackoverflow.com/a/7310398/1944212 */
