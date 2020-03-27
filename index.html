@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Carlyle Project</title>
   </head>
-  <body>
+  <body class="backgroundIMG">
     <div id="app">
-
       <!-- The Modal/Lightbox -->
       <div id="myModal" class="modal" v-bind:hidden="!isModalShown">
         <span class="close-cursor" v-on:click="hideModal()">&times;</span>
@@ -21,7 +20,7 @@
       </div>
 
     <header>
-      <h1><img src="./images/CosplayCompanionLogoAlt.png" width=25% height=25%/>
+      <h1><img class="logo" src="./images/CosplayCompanionLogoAlt.png" width=25% height=25%/>
 
 <nav v-bind:class="active" v-on:click.prevent>
         <ul style="list-style-type:none">
@@ -67,7 +66,7 @@
           <div class="row">
             <div class="column" v-for="image in modalImages">
               <!--<div class="imgpreview">-->
-              <a v-on:click="openModal(image)">
+              <a href="#" v-on:click="openModal(image)">
               <!--<img v-bind:src="image" class="hover-shadow thumbnail">-->
               <div v-bind:style="{backgroundImage:'url('+image+')'}" class="hover-shadow thumbnail"></div>
             </a>
@@ -88,7 +87,7 @@
         <div class="row">
           <div class="column" v-for="image in MVmodalImages">
             <!--<div class="imgpreview">-->
-            <a v-on:click="openModal(image)">
+            <a href="#" v-on:click="openModal(image)">
             <!--<img v-bind:src="image" class="hover-shadow thumbnail">-->
             <div v-bind:style="{backgroundImage:'url('+image+')'}" class="hover-shadow thumbnail"></div>
           </a>
@@ -110,7 +109,7 @@
         <div class="row">
           <div class="column" v-for="image in VGmodalImages">
             <!--<div class="imgpreview">-->
-            <a v-on:click="openModal(image)">
+            <a href="#" v-on:click="openModal(image)">
             <!--<img v-bind:src="image" class="hover-shadow thumbnail">-->
             <div v-bind:style="{backgroundImage:'url('+image+')'}" class="hover-shadow thumbnail"></div>
           </a>
@@ -131,7 +130,7 @@
         <div class="row">
           <div class="column" v-for="image in HISTmodalImages">
             <!--<div class="imgpreview">-->
-            <a v-on:click="openModal(image)">
+            <a href="#" v-on:click="openModal(image)">
             <!--<img v-bind:src="image" class="hover-shadow thumbnail">-->
             <div v-bind:style="{backgroundImage:'url('+image+')'}" class="hover-shadow thumbnail"></div>
           </a>
@@ -152,7 +151,7 @@
         <div class="row">
           <div class="column" v-for="image in COMmodalImages">
             <!--<div class="imgpreview">-->
-            <a v-on:click="openModal(image)">
+            <a href="#" v-on:click="openModal(image)">
             <!--<img v-bind:src="image" class="hover-shadow thumbnail">-->
             <div v-bind:style="{backgroundImage:'url('+image+')'}" class="hover-shadow thumbnail"></div>
           </a>
@@ -173,7 +172,7 @@
         <div class="row">
           <div class="column" v-for="image in OTHERmodalImages">
             <!--<div class="imgpreview">-->
-            <a v-on:click="openModal(image)">
+            <a href="#" v-on:click="openModal(image)">
             <!--<img v-bind:src="image" class="hover-shadow thumbnail">-->
             <div v-bind:style="{backgroundImage:'url('+image+')'}" class="hover-shadow thumbnail"></div>
           </a>
@@ -194,7 +193,7 @@
         <div class="row">
           <div class="column" v-for="image in PROPSmodalImages">
             <!--<div class="imgpreview">-->
-            <a v-on:click="openModal(image)">
+            <a href="#" v-on:click="openModal(image)">
             <!--<img v-bind:src="image" class="hover-shadow thumbnail">-->
             <div v-bind:style="{backgroundImage:'url('+image+')'}" class="hover-shadow thumbnail"></div>
           </a>
@@ -226,6 +225,8 @@
       -->
     </footer>
       </div>
+
       <script src="dist/main.js" type="text/javascript"></script>
   </body>
+
 </html>
